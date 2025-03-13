@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raspberry Pi Control</title>
+    <script>
+        function sendRequest() {
+            fetch('/trigger', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => alert('Response: ' + JSON.stringify(data)))
+            .catch(error => alert('Error: ' + error));
+        }
+    </script>
+</head>
+<body>
+    <h1>Control Raspberry Pi</h1>
+    <button onclick="sendRequest()">Trigger Raspberry Pi Action</button>
+</body>
+</html>
