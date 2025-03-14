@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Replace with your Raspberry Pi's IP
-RASPBERRY_PI_IP = "XXX.XXX.XXX.XXX"
+RASPBERRY_PI_IP = "192.168.1.100"
 
 
 @app.route("/")
