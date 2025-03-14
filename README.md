@@ -99,7 +99,7 @@ git config --global user.email "your_email@example.com"
 ### **1. Clone the Repository**
 
 ```sh
-git git@github.com:seintun/proj_web_server.git
+git clone git@github.com:seintun/proj_web_server.git
 cd proj_web_server
 ```
 
